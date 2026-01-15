@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: e8b57d3fd9294422aa93599daa4ddafd
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - csvFile: {fileID: 4900000, guid: 54657dbb5b907420c90fd9abb50027d3, type: 3}
+  - dateTextUI: {instanceID: 0}
+  - globe: {instanceID: 0}
+  - markerPrefab: {fileID: 8676759067045269324, guid: 5542abff63cbd4659930ef2da44c1e5a, type: 3}
+  - popupUI: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
