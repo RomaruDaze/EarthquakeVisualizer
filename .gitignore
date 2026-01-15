@@ -7,6 +7,9 @@
 [Ll]ogs/
 [Mm]emoryCaptures/
 
+# Exception: Allow WebGLBuild/Build/ directory
+!/WebGLBuild/Build/
+
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
 
