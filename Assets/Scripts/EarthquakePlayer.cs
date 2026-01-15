@@ -150,6 +150,36 @@ public class EarthquakePlayer : MonoBehaviour
 
         return dt;
     }
+    // ===== 再生制御（UI用）=====
+
+    // 再生
+    public void Play()
+    {
+       _isPlaying = true;
+    }
+
+    // 一時停止
+    public void Pause()
+    {
+        _isPlaying = false;
+    }
+
+    // 停止（先頭に戻す）
+    public void Stop()
+    {
+       _isPlaying = false;
+
+       // マーカー削除
+        foreach (var m in _activeMarkers)
+            if (m != null) Destroy(m);
+        _activeMarkers.Clear();
+
+     // 時刻を初期位置へ
+        _currentSimTime = MinSelectableDate;
+        _currentIndex = 0;
+
+        dateTextUI?.SetDate(_currentSimTime);
+    }
 
     // ===== 以降は既存処理（変更なし） =====
 
